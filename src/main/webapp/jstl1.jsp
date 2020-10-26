@@ -41,7 +41,7 @@
                 </c:choose></td>
                 <td><a href="http://localhost:8080/myWebApp/user/delete?number=${i}">Delete
                     user</a></td>
-                <td><a href="http://localhost:8080/myWebApp/user/edit?number=${i}&firstName=${requestScope.currUser.firstName}&lastName=${requestScope.currUser.lastName}&birthdate=${requestScope.currUser.birthdate}&male=${requestScope.currUser.male}">Edit</a></td>
+                <td><a href="http://localhost:8080/myWebApp/userEdit?number=${i}">Edit</a></td>
             </tr>
         </c:forEach>
     </table>

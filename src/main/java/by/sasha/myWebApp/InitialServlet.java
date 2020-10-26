@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 
 
 
-public class JstlServlet1 extends HttpServlet {
+public class InitialServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

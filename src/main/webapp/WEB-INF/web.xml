@@ -6,8 +6,8 @@
     <display-name>Archetype Created Web Application</display-name>
 
     <servlet>
-        <servlet-name>Jstl1</servlet-name>
-        <servlet-class>by.sasha.myWebApp.JstlServlet1</servlet-class>
+        <servlet-name>InutialServlet</servlet-name>
+        <servlet-class>by.sasha.myWebApp.InitialServlet</servlet-class>
     </servlet>
 
     <servlet>
@@ -27,7 +27,7 @@
 
 
     <servlet-mapping>
-        <servlet-name>Jstl1</servlet-name>
+        <servlet-name>InutialServlet</servlet-name>
         <url-pattern>/jstl1</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
@@ -40,7 +40,7 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>EditUser</servlet-name>
-        <url-pattern>/user/edit</url-pattern>
+        <url-pattern>/userEdit</url-pattern>
     </servlet-mapping>
 
 </web-app>

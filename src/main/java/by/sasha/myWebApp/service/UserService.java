@@ -10,6 +10,7 @@ import java.util.List;
 public class UserService {
 
     private List<User> users = new ArrayList<User>();
+
     private static UserService userService;
 
     private UserService() {
@@ -39,18 +40,16 @@ public class UserService {
         users.add(user);
     }
 
+    public void editUser (int i, String firstName, String lastName, Date fromString, boolean male){
+        User user = users.get(i);
+        user.setMale(male);
+        user.setLastName(lastName);
+        user.setFirstName(firstName);
+        user.setBirthdate(fromString);
+    }
+
     private User getUser(int i, String string, String string2, Date fromString, boolean male) {
         return new User(i, string, string2, fromString, male);
-    }
-
-    public User getUserForEdit(Integer number) {
-        return users.get(number);
-    }
-
-    public void updateUser (User user){
-        Integer number = user.getId();
-        users.remove(number);
-        users.add(user);
     }
 
     private Date fromString(String date) {
